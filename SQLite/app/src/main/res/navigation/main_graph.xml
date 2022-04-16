@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.canerture.wtechsqlite.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_ogrenciEkleFragment"
+            app:destination="@id/ogrenciEkleFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_ogrenciAraFragment"
+            app:destination="@id/ogrenciAraFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_tumOgrencilerFragment"
+            app:destination="@id/tumOgrencilerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ogrenciAraFragment"
+        android:name="com.canerture.wtechsqlite.OgrenciAraFragment"
+        android:label="fragment_ogrenci_ara"
+        tools:layout="@layout/fragment_ogrenci_ara" />
+    <fragment
+        android:id="@+id/tumOgrencilerFragment"
+        android:name="com.canerture.wtechsqlite.TumOgrencilerFragment"
+        android:label="fragment_tum_ogrenciler"
+        tools:layout="@layout/fragment_tum_ogrenciler" />
+    <fragment
+        android:id="@+id/ogrenciEkleFragment"
+        android:name="com.canerture.wtechsqlite.OgrenciEkleFragment"
+        android:label="fragment_ogrenci_ekle"
+        tools:layout="@layout/fragment_ogrenci_ekle" />
+</navigation>

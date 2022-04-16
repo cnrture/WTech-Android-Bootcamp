@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Karanlık Mod Renklerim
+    <color name="arkaPlan">#2F2F2F</color>
+
+    <color name="baslikYazi">#EEEEEE</color>
+
+    <color name="gunlerArkaPlan">#E07C7B</color>
+    <color name="gunlerYazi">#FFF8F7</color>
+
+    <color name="okumaCard">#443F79</color>
+    <color name="yurumeCard">#E07C7B</color>
+    <color name="calismaCard">#F2A365</color>
+    <color name="cardIcerik">#FFF8F7</color>
+
+    <color name="todoArkaPlan">#1C1C1C</color>
+    <color name="todoYazi">#D5D5D5</color>
+    <color name="todoCheckBox">#E07C7B</color>
+
+    <color name="buttomNavArkaPlan">#1C1C1C</color>
+    <color name="bottomNavIkon">#BABABA</color>
+
+</resources>

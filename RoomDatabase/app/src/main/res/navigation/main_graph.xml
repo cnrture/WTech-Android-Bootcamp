@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/tumGelirGiderler"
+        android:name="com.canerture.wtechroomdatabase.TumGelirGiderler"
+        android:label="fragment_tum_gelir_giderler"
+        tools:layout="@layout/fragment_tum_gelir_giderler" />
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.canerture.wtechroomdatabase.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_gelirGiderEkleFragment"
+            app:destination="@id/gelirGiderEkleFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_tumGelirGiderler"
+            app:destination="@id/tumGelirGiderler" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_gelirGiderAraFragment"
+            app:destination="@id/gelirGiderAraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gelirGiderEkleFragment"
+        android:name="com.canerture.wtechroomdatabase.GelirGiderEkleFragment"
+        android:label="fragment_gelir_gider_ekle"
+        tools:layout="@layout/fragment_gelir_gider_ekle" />
+    <fragment
+        android:id="@+id/gelirGiderAraFragment"
+        android:name="com.canerture.wtechroomdatabase.GelirGiderAraFragment"
+        android:label="fragment_gelir_gider_ara"
+        tools:layout="@layout/fragment_gelir_gider_ara" />
+</navigation>

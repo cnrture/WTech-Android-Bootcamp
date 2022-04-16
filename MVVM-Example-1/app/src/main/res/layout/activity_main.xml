@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainActivityObject"
+            type="com.canerture.wtechmvvmornek.MainActivity" />
+
+        <variable
+            name="viewModelObject"
+            type="com.canerture.wtechmvvmornek.MainActivityViewModel" />
+
+        <variable
+            name="ogrenciModel"
+            type="com.canerture.wtechmvvmornek.OgrenciModel" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ogrenciAdiEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ad"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/ogrenciSoyadiEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ogrenciSoyadiEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Soyad"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/notOrtalamasiEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciAdiEditText" />
+
+    <EditText
+        android:id="@+id/notOrtalamasiEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Not Ortalaması"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/kaydetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciSoyadiEditText" />
+
+    <Button
+        android:id="@+id/kaydetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:onClick="@{() -> mainActivityObject.ogrenciEkleMA(ogrenciAdiEditText.getText().toString(), ogrenciSoyadiEditText.getText().toString(), notOrtalamasiEditText.getText().toString())}"
+        app:layout_constraintBottom_toTopOf="@+id/ogrenciAdiText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notOrtalamasiEditText" />
+
+    <TextView
+        android:id="@+id/ogrenciAdiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{ogrenciModel.ogrenciAdi}"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ogrenciSoyadiText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaydetButton" />
+
+    <TextView
+        android:id="@+id/ogrenciSoyadiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{ogrenciModel.ogrenciSoyadi}"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/notOrtalamasiText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciAdiText" />
+
+    <TextView
+        android:id="@+id/notOrtalamasiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{ogrenciModel.notOrtalamasi}"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciSoyadiText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/yapilacaklarFragment"
+        android:icon="@drawable/yapilacak"
+        android:title="Yapılacaklar"/>
+
+    <item android:id="@+id/onemliYapilacaklarFragment"
+        android:icon="@drawable/onemli"
+        android:title="Önemli"/>
+
+    <item android:id="@+id/tamamlananYapilacaklarFragment"
+        android:icon="@drawable/tamamlanan"
+        android:title="Tamamlanan"/>
+
+</menu>

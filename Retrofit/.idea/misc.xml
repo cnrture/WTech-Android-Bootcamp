@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/drawable/bottom_sheet_arkaplan.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/drawable/ekle.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/drawable/onemli.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/drawable/sil.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/drawable/tamamlanan.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/drawable/tamamlandi.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/drawable/yapilacak.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/layout/fragment_onemli_yapilacaklar.xml" value="0.3625" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/layout/fragment_tamamlanan_yapilacaklar.xml" value="0.3625" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/layout/fragment_yapilacaklar.xml" value="0.3625" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/layout/fragment_yapilacaklar_bottom_sheet_dialog.xml" value="0.3625" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/layout/yapilacak_card_tasarim.xml" value="0.3625" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechRetrofit/app/src/main/res/menu/bottom_menu.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/yapilacaklarFragment">
+
+    <fragment
+        android:id="@+id/onemliYapilacaklarFragment"
+        android:name="com.canerture.wtechretrofit.fragments.OnemliYapilacaklarFragment"
+        android:label="OnemliYapilacaklarFragment" />
+    <fragment
+        android:id="@+id/tamamlananYapilacaklarFragment"
+        android:name="com.canerture.wtechretrofit.fragments.TamamlananYapilacaklarFragment"
+        android:label="TamamlananYapilacaklarFragment" />
+    <dialog
+        android:id="@+id/yapilacaklarBottomSheetDialogFragment"
+        android:name="com.canerture.wtechretrofit.fragments.YapilacaklarBottomSheetDialogFragment"
+        android:label="YapilacaklarBottomSheetDialogFragment" />
+    <fragment
+        android:id="@+id/yapilacaklarFragment"
+        android:name="com.canerture.wtechretrofit.fragments.YapilacaklarFragment"
+        android:label="YapilacaklarFragment" >
+        <action
+            android:id="@+id/action_yapilacaklarFragment_to_yapilacaklarBottomSheetDialogFragment"
+            app:destination="@id/yapilacaklarBottomSheetDialogFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="@string/iyi_gunler_text"
+        android:textColor="@color/baslikYazi"
+        android:textSize="@dimen/text_very_big_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/pztChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:text="@string/pazartesi"
+        android:textColor="@color/gunlerYazi"
+        android:textSize="@dimen/text_small_size"
+        app:chipBackgroundColor="@color/gunlerArkaPlan"
+        app:layout_constraintEnd_toStartOf="@+id/saliChip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/saliChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sali"
+        android:textColor="@color/gunlerYazi"
+        android:textSize="@dimen/text_small_size"
+        app:chipBackgroundColor="@color/gunlerArkaPlan"
+        app:layout_constraintBottom_toBottomOf="@+id/pztChip"
+        app:layout_constraintEnd_toStartOf="@+id/crsChip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pztChip"
+        app:layout_constraintTop_toTopOf="@+id/pztChip" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/crsChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carsamba"
+        android:textColor="@color/gunlerYazi"
+        android:textSize="@dimen/text_small_size"
+        app:chipBackgroundColor="@color/gunlerArkaPlan"
+        app:layout_constraintBottom_toBottomOf="@+id/pztChip"
+        app:layout_constraintEnd_toStartOf="@+id/prsChip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/saliChip"
+        app:layout_constraintTop_toTopOf="@+id/pztChip" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/prsChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/persembe"
+        android:textColor="@color/gunlerYazi"
+        android:textSize="@dimen/text_small_size"
+        app:chipBackgroundColor="@color/gunlerArkaPlan"
+        app:layout_constraintBottom_toBottomOf="@+id/pztChip"
+        app:layout_constraintEnd_toStartOf="@+id/cumaChip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/crsChip"
+        app:layout_constraintTop_toTopOf="@+id/pztChip" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/cumaChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cuma"
+        android:textColor="@color/gunlerYazi"
+        android:textSize="@dimen/text_small_size"
+        app:chipBackgroundColor="@color/gunlerArkaPlan"
+        app:layout_constraintBottom_toBottomOf="@+id/pztChip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/prsChip"
+        app:layout_constraintTop_toTopOf="@+id/pztChip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/very_big_margin"
+        android:text="@string/aliskanlik_text"
+        android:textColor="@color/baslikYazi"
+        android:textSize="@dimen/text_big_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saliChip" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        app:cardBackgroundColor="@color/okumaCard"
+        app:cardCornerRadius="@dimen/card_corner_radius_medium"
+        app:cardElevation="@dimen/card_elevation_medium"
+        app:contentPadding="@dimen/card_padding"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/okumaImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/okuma" />
+
+            <TextView
+                android:id="@+id/okumaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                android:text="@string/okuma_text"
+                android:textColor="@color/cardIcerik"
+                android:textSize="@dimen/text_big_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/okumaImage" />
+
+            <ProgressBar
+                android:id="@+id/okumaProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="200"
+                android:progress="156"
+                android:progressTint="@color/cardIcerik"
+                app:layout_constraintEnd_toEndOf="@+id/okumaText"
+                app:layout_constraintStart_toStartOf="@+id/okumaText"
+                app:layout_constraintTop_toBottomOf="@+id/okumaText" />
+
+            <TextView
+                android:id="@+id/okumaText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/okuma_sayi"
+                android:textColor="@color/cardIcerik"
+                android:textSize="@dimen/text_small_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/okumaProgress" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/yurumeCard"
+        app:cardCornerRadius="@dimen/card_corner_radius_medium"
+        app:cardElevation="@dimen/card_elevation_medium"
+        app:contentPadding="@dimen/card_padding"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/yurumeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yurume" />
+
+            <TextView
+                android:id="@+id/yurumeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                android:text="@string/yurume_text"
+                android:textColor="@color/cardIcerik"
+                android:textSize="@dimen/text_big_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yurumeImage" />
+
+            <ProgressBar
+                android:id="@+id/yurumeProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="10000"
+                android:progress="3567"
+                android:progressTint="@color/cardIcerik"
+                app:layout_constraintEnd_toEndOf="@+id/yurumeText"
+                app:layout_constraintStart_toStartOf="@+id/yurumeText"
+                app:layout_constraintTop_toBottomOf="@+id/yurumeText" />
+
+            <TextView
+                android:id="@+id/yurumeText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/yurume_sayi"
+                android:textColor="@color/cardIcerik"
+                android:textSize="@dimen/text_small_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yurumeProgress" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_margin"
+        app:cardBackgroundColor="@color/calismaCard"
+        app:cardCornerRadius="@dimen/card_corner_radius_medium"
+        app:cardElevation="@dimen/card_elevation_medium"
+        app:contentPadding="@dimen/card_padding"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/calismaImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calisma" />
+
+            <TextView
+                android:id="@+id/calismaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                android:text="@string/calisma_text"
+                android:textColor="@color/cardIcerik"
+                android:textSize="@dimen/text_big_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calismaImage" />
+
+            <ProgressBar
+                android:id="@+id/calismaProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="30"
+                android:progressTint="@color/cardIcerik"
+                app:layout_constraintEnd_toEndOf="@+id/calismaText"
+                app:layout_constraintStart_toStartOf="@+id/calismaText"
+                app:layout_constraintTop_toBottomOf="@+id/calismaText" />
+
+            <TextView
+                android:id="@+id/calismaText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/calisma_sayi"
+                android:textColor="@color/cardIcerik"
+                android:textSize="@dimen/text_small_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calismaProgress" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/very_big_margin"
+        android:text="@string/gunluk_gorevler_text"
+        android:textColor="@color/baslikYazi"
+        android:textSize="@dimen/text_big_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        app:cardBackgroundColor="@color/todoArkaPlan"
+        app:cardCornerRadius="@dimen/card_corner_radius_big"
+        app:cardElevation="@dimen/card_elevation_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <CheckBox
+            android:id="@+id/gorev1CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:buttonTint="@color/todoCheckBox"
+            android:text="@string/gorev_bir_text"
+            android:textColor="@color/todoYazi"
+            android:textSize="@dimen/text_small_size"
+            app:useMaterialThemeColors="false" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        app:cardBackgroundColor="@color/todoArkaPlan"
+        app:cardCornerRadius="@dimen/card_corner_radius_big"
+        app:cardElevation="@dimen/card_elevation_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <CheckBox
+            android:id="@+id/gorev2CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:buttonTint="@color/todoCheckBox"
+            android:text="@string/gorev_iki_text"
+            android:textColor="@color/todoYazi"
+            android:textSize="@dimen/text_small_size"
+            app:useMaterialThemeColors="false" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        app:cardBackgroundColor="@color/todoArkaPlan"
+        app:cardCornerRadius="@dimen/card_corner_radius_big"
+        app:cardElevation="@dimen/card_elevation_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+        <CheckBox
+            android:id="@+id/gorev3CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:buttonTint="@color/todoCheckBox"
+            android:text="@string/gorev_uc_text"
+            android:textColor="@color/todoYazi"
+            android:textSize="@dimen/text_small_size"
+            app:useMaterialThemeColors="false" />
+    </androidx.cardview.widget.CardView>
+
+    <Switch
+        android:id="@+id/karanlikTemaSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:minHeight="48dp"
+        android:text="@string/switch_text"
+        android:textSize="@dimen/text_medium_size"
+        android:theme="@style/switchButtonTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttomNavArkaPlan"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/bottomNavIkon"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

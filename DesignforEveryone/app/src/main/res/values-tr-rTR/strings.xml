@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WTechDesignforEveryone</string>
+    <string name="iyi_gunler_text">İyi günler,\nCaner</string>
+    <string name="switch_text">Karanlık Tema</string>
+    <string name="pazartesi">Pzt</string>
+    <string name="sali">Salı</string>
+    <string name="carsamba">Çrş</string>
+    <string name="persembe">Prş</string>
+    <string name="cuma">Cuma</string>
+    <string name="aliskanlik_text">Alışkanlıkların</string>
+    <string name="gunluk_gorevler_text">Görevler</string>
+    <string name="okuma_text">Okuma</string>
+    <string name="okuma_sayi">156 Yaprak</string>
+    <string name="yurume_text">Yürüme</string>
+    <string name="yurume_sayi">3567 Adım</string>
+    <string name="calisma_text">Çalışma</string>
+    <string name="calisma_sayi">30 Saat</string>
+    <string name="gorev_bir_text">Akşam yemeği için bir şeyler al</string>
+    <string name="gorev_iki_text">Spor salonuna git</string>
+    <string name="gorev_uc_text">Sunum Hazırla</string>
+</resources>

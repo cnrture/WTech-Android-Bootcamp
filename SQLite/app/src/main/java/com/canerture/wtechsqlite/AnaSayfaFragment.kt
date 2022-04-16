@@ -1,0 +1,57 @@
+package com.canerture.wtechsqlite
+
+import android.os.Bundle
+import android.util.Log
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.canerture.wtechsqlite.databinding.FragmentAnaSayfaBinding
+
+class AnaSayfaFragment : Fragment() {
+
+    private lateinit var binding: FragmentAnaSayfaBinding
+    private lateinit var veriTabani: Veritabani
+
+    private lateinit var ogrenciList: ArrayList<OgrenciModel>
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        veriTabani = Veritabani(requireContext())
+        ogrenciList = ArrayList()
+        veriTabani.tumOgrencileriAl(ogrenciList)
+        println(ogrenciList)
+
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentAnaSayfaBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.tumOgrencilerButton.setOnClickListener {
+            findNavController().navigate(R.id.action_anaSayfaFragment_to_tumOgrencilerFragment)
+        }
+
+        binding.ogrenciAraButton.setOnClickListener {
+            findNavController().navigate(R.id.action_anaSayfaFragment_to_ogrenciAraFragment)
+        }
+
+        binding.ogrenciEkleButton.setOnClickListener {
+            findNavController().navigate(R.id.action_anaSayfaFragment_to_ogrenciEkleFragment)
+        }
+
+        binding.ogrencileriTemizleButton.setOnClickListener {
+            veriTabani.ogrencileriTemizle()
+        }
+
+    }
+}

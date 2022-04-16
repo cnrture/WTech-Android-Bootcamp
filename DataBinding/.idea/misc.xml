@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_binding_adapter8.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_component_erisim1.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_event_handle2.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_event_handle_with_parameter3.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_main.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_xml_model_ile_veri_gonderme7.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_xml_sinif_import_etme.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_xmldegisken_gonderme4.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_xmlicinde_kodlama.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/activity_xmlicinde_kodlama5.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/cnrture/AndroidStudioProjects/WTechDataBinding/app/src/main/res/layout/fragment_main.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

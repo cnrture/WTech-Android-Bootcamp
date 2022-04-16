@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ana_graph"
+    app:startDestination="@id/filmlerFragment">
+
+    <fragment
+        android:id="@+id/filmlerFragment"
+        android:name="com.canerture.wtechmvvmornek2.fragments.ana.FilmlerFragment"
+        android:label="fragment_filmler"
+        tools:layout="@layout/fragment_filmler" />
+    <fragment
+        android:id="@+id/dizilerFragment"
+        android:name="com.canerture.wtechmvvmornek2.fragments.ana.DizilerFragment"
+        android:label="fragment_diziler"
+        tools:layout="@layout/fragment_diziler" />
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.canerture.wtechmvvmornek2.fragments.ana.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+</navigation>

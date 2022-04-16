@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">WTechDesignforEveryone</string>
+
+    <string name="iyi_gunler_text">Good day,\nZeynep</string>
+    <string name="switch_text">Dark Mode</string>
+
+    <string name="pazartesi">Mon</string>
+    <string name="sali">Tue</string>
+    <string name="carsamba">Wed</string>
+    <string name="persembe">Thu</string>
+    <string name="cuma">Fri</string>
+
+    <string name="aliskanlik_text">Your habits</string>
+    <string name="gunluk_gorevler_text">To-Do</string>
+
+    <string name="okuma_text">Reading</string>
+    <string name="okuma_sayi">156 Sheets</string>
+
+    <string name="yurume_text">Walking</string>
+    <string name="yurume_sayi">3567 Steps</string>
+
+    <string name="calisma_text">Working</string>
+    <string name="calisma_sayi">30 Hours</string>
+
+    <string name="gorev_bir_text">Buy something for dinner</string>
+    <string name="gorev_iki_text">Go to the gym</string>
+    <string name="gorev_uc_text">Prepare a presentation</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable name="xmlDegiskenGondermeObject" type="com.canerture.wtechdatabinding.XML_Degisken_Gonderme_4" />
+        <variable name="ortalamaSonuc" type="String" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".XML_Degisken_Gonderme_4">
+
+        <EditText
+            android:id="@+id/birinciSayiEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sayı 1"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/ikinciSayiEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ikinciSayiEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sayı 2"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/hesaplaButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birinciSayiEditText" />
+
+        <Button
+            android:id="@+id/hesaplaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HESAPLA"
+            android:onClick="@{() -> xmlDegiskenGondermeObject.ortalamaHesapla(birinciSayiEditText.getText().toString(), ikinciSayiEditText.getText().toString())}"
+            app:layout_constraintBottom_toTopOf="@+id/sonucText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ikinciSayiEditText" />
+
+        <TextView
+            android:id="@+id/sonucText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{ortalamaSonuc}"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hesaplaButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/giris_graph"
+    app:startDestination="@id/girisYapFragment">
+
+    <fragment
+        android:id="@+id/girisYapFragment"
+        android:name="com.canerture.wtechmvvmornek2.fragments.giris.GirisYapFragment"
+        android:label="fragment_giris_yap"
+        tools:layout="@layout/fragment_giris_yap" >
+        <action
+            android:id="@+id/action_girisYapFragment_to_uyeOlFragment"
+            app:destination="@id/uyeOlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uyeOlFragment"
+        android:name="com.canerture.wtechmvvmornek2.fragments.giris.UyeOlFragment"
+        android:label="fragment_uye_ol"
+        tools:layout="@layout/fragment_uye_ol" >
+        <action
+            android:id="@+id/action_uyeOlFragment_to_girisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+</navigation>
